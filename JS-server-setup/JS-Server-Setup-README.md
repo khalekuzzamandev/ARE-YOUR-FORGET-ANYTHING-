@@ -1,6 +1,6 @@
 # 🚀 JS Server Setup
 ---
-### 📌 server Setup Overview
+## 📌 server Setup Overview
 
 #### 1. Folder maked
 #### 2. 📦 Initialize Node.js Project
