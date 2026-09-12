@@ -14,10 +14,12 @@ npm init -y
 ```bash
 npm i cors mongodb dotenv express
 ```
-4. index.js file create
-5. express web side structure code paste
+### 4. index.js file create
+### 5. express web side structure code paste
 
-### 📌 Connect the backend with MongoDB.
+
+---
+## 📌 Connect the backend with MongoDB.
   1. srv connection all code paste in index.js
   2. Frontend uri copy and paste .env file
   3. await client close() ; this line -comment
