@@ -24,9 +24,8 @@
 
 ---
 
-## 🟢 2. MongoDB Connection Details on image
+## 🟢 2. MongoDB Connection with server- Details on image
 
-After setting up the server, connect MongoDB with the backend using the MongoDB Driver and `.env` file.
 
 <img src="./mongodb-connect.png" alt="MongoDB Connection Setup" width="900"/>
 
