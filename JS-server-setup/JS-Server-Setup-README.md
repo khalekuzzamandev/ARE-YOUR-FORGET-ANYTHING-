@@ -29,17 +29,23 @@ npm i cors mongodb dotenv express
 
 ---
 
-## 🟢 1. JavaScript Server Setup Details on image
+## 🟢 1. JavaScript Server Setup & MongoDB Connection
 
+<div style="display: flex; gap: 20px; flex-wrap: wrap;">
 
-<img src="../images/JS-server-setup.png" alt="JS Server Setup" width="900"/>
+  <img
+    src="../images/JS-server-setup.png"
+    alt="JS Server Setup"
+    width="48%"
+  />
 
----
+  <img
+    src="../images/mongodb-connect.png"
+    alt="MongoDB Connection Setup"
+    width="48%"
+  />
 
-## 🟢 2. MongoDB Connection with server- Details on image
-
-
-<img src="../images/mongodb-connect.png" alt="MongoDB Connection Setup" width="900"/>
+</div>
 
 ---
 ### 💻 Initial server ready code (index.js)
