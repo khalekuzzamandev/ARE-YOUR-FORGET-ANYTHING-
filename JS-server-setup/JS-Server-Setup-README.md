@@ -2,7 +2,7 @@
 ---
 ### 📌 server Setup Overview
 
-1. Folder maked
+### 1. Folder maked
 ### 2. 📦 Initialize Node.js Project
 
 ```bash
