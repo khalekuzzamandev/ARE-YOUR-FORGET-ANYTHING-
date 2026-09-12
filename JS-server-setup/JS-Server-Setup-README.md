@@ -20,13 +20,13 @@
 ## 🟢 1. JavaScript Server Setup Details on image
 
 
-<img src="./JS-server-setup.png" alt="JS Server Setup" width="900"/>
+<img src="../images/JS-server-setup.png" alt="JS Server Setup" width="900"/>
 
 ---
 
 ## 🟢 2. MongoDB Connection with server- Details on image
 
 
-<img src="./mongodb-connect.png" alt="MongoDB Connection Setup" width="900"/>
+<img src="../images/mongodb-connect.png" alt="MongoDB Connection Setup" width="900"/>
 
 ---
