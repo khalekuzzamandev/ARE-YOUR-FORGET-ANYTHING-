@@ -2,20 +2,20 @@
 ---
 ### 📌 server Setup Overview
 
-### 1. Folder maked
-### 2. 📦 Initialize Node.js Project
+#### 1. Folder maked
+#### 2. 📦 Initialize Node.js Project
 
 ```bash
 npm init -y
 ```
 
-### 3. 📥 Install Required Packages
+#### 3. 📥 Install Required Packages
 
 ```bash
 npm i cors mongodb dotenv express
 ```
-### 4. index.js file create
-### 5. express web side structure code paste
+#### 4. index.js file create
+#### 5. express web side structure code paste
 
 
 ---
