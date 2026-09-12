@@ -1,6 +1,6 @@
 # 🚀 JS Server Setup
 
-## 📌 server Setup Overview
+### 📌 server Setup Overview
 
 1. Folder maked
 2. npm init -y
@@ -8,7 +8,7 @@
 4. index.js file create
 5. express web side structure code paste
 
-## 📌 Connect the backend with MongoDB.
+### 📌 Connect the backend with MongoDB.
   1. srv connection all code paste in index.js
   2. Frontend uri copy and paste .env file
   3. await client close() ; this line -comment
@@ -17,15 +17,14 @@
 ---
 ---
 
-## 🟢 1. JavaScript Server Setup
+## 🟢 1. JavaScript Server Setup Details on image
 
-First, create and configure the JavaScript server using Node.js and Express.
 
 <img src="./JS-server-setup.png" alt="JS Server Setup" width="900"/>
 
 ---
 
-## 🟢 2. MongoDB Connection
+## 🟢 2. MongoDB Connection Details on image
 
 After setting up the server, connect MongoDB with the backend using the MongoDB Driver and `.env` file.
 
