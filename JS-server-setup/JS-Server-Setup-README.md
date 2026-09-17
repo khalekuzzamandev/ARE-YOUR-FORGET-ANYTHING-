@@ -52,60 +52,64 @@ npm i cors mongodb dotenv express
 
 ```javascript
 const express = require('express');
-
-const app = express();
-const port = 5000;
-
+const cors=require('cors')
+const app = express()
+const port = 5000
 const { MongoClient, ServerApiVersion } = require('mongodb');
+require('dotenv').config()
+app.use(cors())
+app.use(express.json())
 
-require('dotenv').config();
 
 app.get('/', (req, res) => {
-  res.send('Server is running');
-});
+  res.send('Server is working.....')
+})
 
-// MongoDB Driver Code
-const uri = process.env.MONGODB_URI;
+// mongodb drivers codes
+const uri = process.env.MONGODB_URI
 
-// Create a MongoClient with MongoClientOptions
-// to set the Stable API version
+// Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
     strict: true,
     deprecationErrors: true,
-  },
+  }
 });
 
 async function run() {
   try {
-    // Connect the client to the server
+    // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
 
-    // Database
-    const database = client.db('khalekuzzaman');
+    // collections
+    
+    const database=client.db('khalekuzzaman')
+    const skillCollection=database.collection("skill")
 
-    // Collections
-    const skillCollection = database.collection('skills');
-    const projectCollection = database.collection('projects');
+
+    // post skill
+
+    app.post('/skill/post',async(req,res)=>{
+      const job=req.body
+      const result=await skillCollection.insertOne(job)
+      res.send(result)
+    })
 
     // Send a ping to confirm a successful connection
-    await client.db('admin').command({ ping: 1 });
-
-    console.log(
-      'Pinged your deployment. You successfully connected to MongoDB!'
-    );
+    await client.db("admin").command({ ping: 1 });
+    console.log("Pinged your deployment. You successfully connected to MongoDB!");
   } finally {
     // Ensures that the client will close when you finish/error
     // await client.close();
   }
 }
-
 run().catch(console.dir);
 
+
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
+  console.log(`Example app listening on port ${port}`)
+})
 ```
 
 ---
