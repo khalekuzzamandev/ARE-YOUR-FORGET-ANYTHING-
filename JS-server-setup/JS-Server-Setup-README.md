@@ -24,6 +24,10 @@ npm i cors mongodb dotenv express
   2. Frontend uri copy and paste .env file
   3. await client close() ; this line -comment
   4. require('dotenv').config();
+  --- 
+  5.const cors=require('cors')
+  app.use(cors())
+  app.use(express.json())
 
 ---
 
