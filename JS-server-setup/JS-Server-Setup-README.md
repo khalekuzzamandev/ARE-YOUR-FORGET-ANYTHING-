@@ -25,8 +25,8 @@ npm i cors mongodb dotenv express
   3. await client close() ; this line -comment
   4. require('dotenv').config();
   5.const cors=require('cors')
-  app.use(cors())
-  app.use(express.json())
+  6.app.use(cors())
+  7.app.use(express.json())
 
 ---
 
